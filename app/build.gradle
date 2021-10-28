@@ -5,14 +5,73 @@ plugins {
     id 'com.google.ar.sceneform.plugin'
 }
 
-
 sceneform.asset(
+        'sampledata/model8/SharkHP_2.fbx',
+        'default',
+        'sampledata/model8/SharkHP_2.sfa',
+        'src/main/res/raw/shark',
+        ['sampledata/model8/SharkHP_2.fbx']
+)
+
+
+/*sceneform.asset(
+        'sampledata/model7/fishman.fbx',
+        'default',
+        'sampledata/model7/fishman.sfa',
+        'src/main/res/raw/fishman',
+        ['sampledata/model7/fishman.fbx']
+)*/
+
+
+/*sceneform.asset(
+        'sampledata/model6/luoli_run_triangle.fbx',
+        'default',
+        'sampledata/model6/luoli_run_triangle.sfa',
+        'src/main/res/raw/loloi_run',
+        ['sampledata/model6/luoli_run_triangle.fbx']
+)*/
+
+/*sceneform.asset(
+        'sampledata/model5/rp_nathan_animated_003_walking.fbx',
+        'default',
+        'sampledata/model5/rp_nathan_animated_003_walking.sfa',
+        'src/main/res/raw/nathan',
+        ['sampledata/model5/rp_nathan_animated_003_walking.fbx']
+)*/
+
+
+/*sceneform.asset(
+        'sampledata/model4/Dragon.fbx',
+        'default',
+        'sampledata/model4/Dragon.sfa',
+        'src/main/res/raw/dragon',
+        ['sampledata/model4/Dragon.fbx']
+)*/
+
+/*sceneform.asset(
+        'sampledata/model3/Ship3.fbx',
+        'default',
+        'sampledata/model3/Ship3.sfa',
+        'src/main/res/raw/ship3',
+        ['sampledata/model3/Ship3.fbx']
+)*/
+
+
+/*sceneform.asset(
         'sampledata/model2/Rumba Dancing aus C4D R23.fbx',
         'default',
         'sampledata/model2/Rumba Dancing aus C4D R23.sfa',
         'src/main/res/raw/rumba2',
         ['sampledata/model2/Rumba Dancing aus C4D R23.fbx']
-)
+)*/
+
+/*sceneform.asset(
+        'sampledata/model1/type_214.fbx',
+        'default',
+        'sampledata/model1/type_214.sfa',
+        'src/main/res/raw/type_214',
+        ['sampledata/model1/type_214.fbx']
+)*/
 
 android {
     compileSdk 31

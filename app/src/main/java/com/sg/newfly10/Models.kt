@@ -7,6 +7,106 @@ sealed class Models {
     abstract val height: Float
     abstract val rotationDegrees: Float
 
+
+    object Shark: Models() {
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.08f
+        override val height: Float
+            get() = 0.2f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object Fisherman : Models() {
+        override val degreesPerSecond: Float
+            get() = 5f
+        override val radius: Float
+            get() = 0.001f
+        override val height: Float
+            get() = 0.01f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object LoliRun : Models() {
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.1f
+        override val height: Float
+            get() = 0.1f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object Nathan : Models() {
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = -0.1f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object Sub : Models() {
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = -0.1f
+        override val rotationDegrees: Float
+            get() = 360f
+    }
+
+   object Dragon : Models() {
+         override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = -0.1f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+
+
+    object Ship3 : Models() {
+        override val degreesPerSecond: Float
+            get() = 5f
+        override val radius: Float
+            get() = 8f
+        override val height: Float
+            get() = 0.3f
+        override val rotationDegrees: Float
+            get() = 90f
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     object Rumba2 : Models() {
         override val degreesPerSecond: Float
             get() = 10f
@@ -19,40 +119,7 @@ sealed class Models {
     }
 
 
-
-    object Rumba : Models() {
-        override val degreesPerSecond: Float
-            get() = 20f
-        override val radius: Float
-            get() = 0.3f
-        override val height: Float
-            get() = 0.0f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
-
-
-    object Fly : Models() {
-        override val degreesPerSecond: Float
-            get() = 20f
-        override val radius: Float
-            get() = 2f
-        override val height: Float
-            get() = 0.7f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
-    object Bird : Models() {
-        override val degreesPerSecond: Float
-            get() = 20f
-        override val radius: Float
-            get() = 2f
-        override val height: Float
-            get() = 0.7f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
-    object Fish : Models() {
+   object Fish : Models() {
         override val degreesPerSecond: Float
             get() = 20f
         override val radius: Float
@@ -63,26 +130,7 @@ sealed class Models {
             get() = 180f
     }
 
-    object Bee : Models() {
-        override val degreesPerSecond: Float
-            get() = 20f
-        override val radius: Float
-            get() = 0.3f
-        override val height: Float
-            get() = 0.1f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
-    object Jet : Models() {
-        override val degreesPerSecond: Float
-            get() = 20f
-        override val radius: Float
-            get() = 2f
-        override val height: Float
-            get() = 0.7f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
+
 
 
 }
