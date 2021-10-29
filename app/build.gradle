@@ -6,13 +6,28 @@ plugins {
 }
 
 sceneform.asset(
+        'sampledata/model10/LastVerstionHibiscus5.fbx',
+        'default',
+        'sampledata/model10/LastVerstionHibiscus5.sfa',
+        'src/main/res/raw/flower',
+        ['sampledata/model10/LastVerstionHibiscus5.fbx']
+)
+
+/*sceneform.asset(
+        'sampledata/model9/caballomader0_ani1.fbx',
+        'default',
+        'sampledata/model9/caballomader0_ani1.sfa',
+        'src/main/res/raw/caballomader',
+        ['sampledata/model9/caballomader0_ani1.fbx']
+)*/
+
+/*sceneform.asset(
         'sampledata/model8/SharkHP_2.fbx',
         'default',
         'sampledata/model8/SharkHP_2.sfa',
         'src/main/res/raw/shark',
         ['sampledata/model8/SharkHP_2.fbx']
-)
-
+)*/
 
 /*sceneform.asset(
         'sampledata/model7/fishman.fbx',

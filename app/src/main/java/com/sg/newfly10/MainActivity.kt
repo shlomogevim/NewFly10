@@ -27,17 +27,30 @@ class MainActivity : AppCompatActivity() {
     private var isRecording=false
 
 
+    private val model = Models.Flower                    // working fine
+    private val modelResourceId = R.raw.flower
+    val animationString="Scene"
+    private var spaScale=false
+    private var thisScale=0.03f
 
 
-    private val model = Models.Shark                      // working fine
+   /* private val model = Models.Caballallo                       // working fine
+    private val modelResourceId = R.raw.caballomader
+    val animationString="Armature|ArmatureAction.002"
+    private var spaScale=false
+    private var thisScale=0.03f*/
+
+   /* private val model = Models.Shark                      // working fine
     private val modelResourceId = R.raw.shark
     val animationString="Armature|ArmatureAction"
-    private var isScale=false
+    private var spaScale=false
+    private var thisScale=0.8f*/
+
 
     /*private val model = Models.Fisherman              // working fine
     private val modelResourceId = R.raw.fishman
     val animationString="fishman"
-    private var isScale=false
+    private var spaScale=false
 */
 
    /* private val model = Models.LoliRun                   // working fine
@@ -131,9 +144,9 @@ class MainActivity : AppCompatActivity() {
             setParent(rotatingNode)
             localPosition = Vector3(model.radius, model.height, 0f)
             localRotation = Quaternion.eulerAngles(Vector3(0f, model.rotationDegrees, 0f))
-            val num=0.1f
-        if (isScale){
-            localScale = Vector3(num, num, num)
+
+        if (!spaScale){
+            localScale = Vector3(thisScale, thisScale, thisScale)
         }
         }
         arFragment.arSceneView.scene.addChild(anchorNode)

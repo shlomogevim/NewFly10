@@ -7,6 +7,27 @@ sealed class Models {
     abstract val height: Float
     abstract val rotationDegrees: Float
 
+    object Flower: Models() {
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.02f
+        override val height: Float
+            get() = 0.2f
+        override val rotationDegrees: Float
+            get() = 270f
+    }
+
+    object Caballallo: Models() {
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = 0.2f
+        override val rotationDegrees: Float
+            get() = 90f
+    }
 
     object Shark: Models() {
         override val degreesPerSecond: Float
