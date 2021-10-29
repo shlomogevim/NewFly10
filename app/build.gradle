@@ -7,11 +7,19 @@ plugins {
 
 sceneform.asset(
         'sampledata/model10/LastVerstionHibiscus5.fbx',
-        'default',
+        'sampledata/model10/custom_material.mat',
         'sampledata/model10/LastVerstionHibiscus5.sfa',
         'src/main/res/raw/flower',
         ['sampledata/model10/LastVerstionHibiscus5.fbx']
 )
+
+/*sceneform.asset(
+        'sampledata/model10/LastVerstionHibiscus5.fbx',
+        'default',
+        'sampledata/model10/LastVerstionHibiscus5.sfa',
+        'src/main/res/raw/flower',
+        ['sampledata/model10/LastVerstionHibiscus5.fbx']
+)*/
 
 /*sceneform.asset(
         'sampledata/model9/caballomader0_ani1.fbx',

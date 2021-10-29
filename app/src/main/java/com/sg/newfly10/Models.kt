@@ -9,13 +9,13 @@ sealed class Models {
 
     object Flower: Models() {
         override val degreesPerSecond: Float
-            get() = 10f
+            get() = 5f
         override val radius: Float
-            get() = 0.02f
+            get() = 0.001f
         override val height: Float
-            get() = 0.2f
+            get() = 0.02f
         override val rotationDegrees: Float
-            get() = 270f
+            get() = 90f
     }
 
     object Caballallo: Models() {

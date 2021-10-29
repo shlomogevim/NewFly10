@@ -11,6 +11,7 @@ import com.google.ar.sceneform.Node
 import com.google.ar.sceneform.animation.ModelAnimator
 import com.google.ar.sceneform.math.Quaternion
 import com.google.ar.sceneform.math.Vector3
+import com.google.ar.sceneform.rendering.Material
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     private val modelResourceId = R.raw.flower
     val animationString="Scene"
     private var spaScale=false
-    private var thisScale=0.03f
+    private var thisScale=0.075f
 
 
    /* private val model = Models.Caballallo                       // working fine
@@ -120,7 +121,11 @@ class MainActivity : AppCompatActivity() {
             .setSource(this, modelResourceId)
             .build()
             .thenAccept { modelRenderable ->
+
                 addNodeToScene(anchor, modelRenderable)
+
+              //  modelRenderable.getMaterial().setFloat3("andyColor",0.92f,0.26f,0.21f)
+
                 eliminateDot()
             }.exceptionally {
                 Toast.makeText(this, "Error creatind nodes:$it", Toast.LENGTH_LONG).show()
@@ -128,6 +133,8 @@ class MainActivity : AppCompatActivity() {
             }
 
     }
+
+
 
     private fun addNodeToScene(
         anchor: Anchor?,
@@ -148,6 +155,7 @@ class MainActivity : AppCompatActivity() {
         if (!spaScale){
             localScale = Vector3(thisScale, thisScale, thisScale)
         }
+
         }
         arFragment.arSceneView.scene.addChild(anchorNode)
         nodes.add(rotatingNode)
