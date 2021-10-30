@@ -27,12 +27,33 @@ class MainActivity : AppCompatActivity() {
     private lateinit var videoRecorder: VideoRecorder
     private var isRecording=false
 
+    private val model = Models.Submarine                  //model-1
+    private val modelResourceId = R.raw.submarin_type_214
+    val animationString="214_bone|214_boneAction"
+    private var spaScale=false
+    private var thisScale=.1f
 
-    private val model = Models.Flower                    // working fine
+
+  /*  private val model = Models.Flower                    // model-10
     private val modelResourceId = R.raw.flower
     val animationString="Scene"
     private var spaScale=false
     private var thisScale=0.075f
+*/
+
+   /* private val model = Models.Fly                //model-11
+    private val modelResourceId = R.raw.fly
+    val animationString="fly"
+    private var spaScale=false
+    private var thisScale=0.9f*/
+
+
+   /* private val model = Models.Fish               //model-20
+    private val modelResourceId = R.raw.fish
+    val animationString="Armature|ArmatureAction"
+    private var spaScale=false
+    private var thisScale=.6f*/
+
 
 
    /* private val model = Models.Caballallo                       // working fine
@@ -62,9 +83,6 @@ class MainActivity : AppCompatActivity() {
    /* private val model = Models.Nathan                    // working fine
     private val modelResourceId = R.raw.nathan*/
 
-   /* private val model = Models.Sub                       //witoutcolor
-    private val modelResourceId = R.raw.type_214
-    val animationString="214_bone|214_boneAction"*/
 
 
     /*private val model = Models.Dragon                  // working fine
@@ -150,7 +168,8 @@ class MainActivity : AppCompatActivity() {
 
             setParent(rotatingNode)
             localPosition = Vector3(model.radius, model.height, 0f)
-            localRotation = Quaternion.eulerAngles(Vector3(0f, model.rotationDegrees, 0f))
+           localRotation = Quaternion.eulerAngles(Vector3(0f, model.rotationDegrees, 0f))
+           // localRotation = Quaternion.eulerAngles(Vector3(0f, 180f, 0f))
 
         if (!spaScale){
             localScale = Vector3(thisScale, thisScale, thisScale)
