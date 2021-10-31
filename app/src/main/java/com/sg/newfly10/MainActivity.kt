@@ -27,11 +27,20 @@ class MainActivity : AppCompatActivity() {
     private lateinit var videoRecorder: VideoRecorder
     private var isRecording=false
 
-    private val model = Models.Submarine                  //model-1
+   /* private val model = Models.Submarine                  //model-1
     private val modelResourceId = R.raw.submarin_type_214
     val animationString="214_bone|214_boneAction"
     private var spaScale=false
-    private var thisScale=.1f
+    private var thisScale=.1f*/
+
+    /*private val model = Models.Rumba2                 // model-2
+  private val modelResourceId = R.raw.rumba2*/
+
+     private val model = Models.Ship3                    // modek-3
+   private val modelResourceId = R.raw.ship3
+    val animationString="CINEMA_4D_Main"
+    private var spaScale=false
+    private var thisScale=.3f
 
 
   /*  private val model = Models.Flower                    // model-10
@@ -88,11 +97,9 @@ class MainActivity : AppCompatActivity() {
     /*private val model = Models.Dragon                  // working fine
     private val modelResourceId = R.raw.dragon*/
 
-   /* private val model = Models.Ship3
-    private val modelResourceId = R.raw.ship3*/
 
-    /*private val model = Models.Rumba2                 // // working fine
-    private val modelResourceId = R.raw.rumba2*/
+
+
 
     private var curCameraPosition = Vector3.zero()
 

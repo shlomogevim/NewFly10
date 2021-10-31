@@ -7,6 +7,39 @@ sealed class Models {
     abstract val height: Float
     abstract val rotationDegrees: Float
 
+    object Submarine : Models() {                   //model-1
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.6f
+        override val height: Float
+            get() = -0.1f
+        override val rotationDegrees: Float
+            get() = 360f
+    }
+
+    object Rumba2 : Models() {                         //model-2
+        override val degreesPerSecond: Float
+            get() = 20f
+        override val radius: Float
+            get() = 0.03f
+        override val height: Float
+            get() = 0.0f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object Ship3 : Models() {                          //model-3
+        override val degreesPerSecond: Float
+            get() = 5f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = 0.3f
+        override val rotationDegrees: Float
+            get() = 90f
+    }
+
     object Fish: Models() {
         override val degreesPerSecond: Float
             get() = 10f
@@ -96,16 +129,7 @@ sealed class Models {
             get() = 180f
     }
 
-    object Submarine : Models() {
-        override val degreesPerSecond: Float
-            get() = 10f
-        override val radius: Float
-            get() = 0.6f
-        override val height: Float
-            get() = -0.1f
-        override val rotationDegrees: Float
-            get() = 360f
-    }
+
 
    object Dragon : Models() {
          override val degreesPerSecond: Float
@@ -119,28 +143,10 @@ sealed class Models {
     }
 
 
-    object Ship3 : Models() {
-        override val degreesPerSecond: Float
-            get() = 5f
-        override val radius: Float
-            get() = 8f
-        override val height: Float
-            get() = 0.3f
-        override val rotationDegrees: Float
-            get() = 90f
-    }
 
 
-    object Rumba2 : Models() {
-        override val degreesPerSecond: Float
-            get() = 10f
-        override val radius: Float
-            get() = 0.03f
-        override val height: Float
-            get() = 0.0f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
+
+
 
 
 

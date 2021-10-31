@@ -5,6 +5,30 @@ plugins {
     id 'com.google.ar.sceneform.plugin'
 }
 
+/*sceneform.asset(                                           // model-1
+        'sampledata/model1/type_214.fbx',
+        'sampledata/general/custom_material_para1.mat',
+        'sampledata/model1/type_214.sfa',
+        'src/main/res/raw/submarin_type_214',
+        ['sampledata/model1/type_214.fbx']
+)*/
+
+/*sceneform.asset(                                                //model-2
+        'sampledata/model2/Rumba Dancing aus C4D R23.fbx',
+        'default',
+        'sampledata/model2/Rumba Dancing aus C4D R23.sfa',
+        'src/main/res/raw/rumba2',
+        ['sampledata/model2/Rumba Dancing aus C4D R23.fbx']
+)*/
+
+sceneform.asset(                                                 // model -3
+        'sampledata/model3/Ship3.fbx',
+        'default',
+        'sampledata/model3/Ship3.sfa',
+        'src/main/res/raw/ship3',
+        ['sampledata/model3/Ship3.fbx']
+)
+
 
 /*sceneform.asset(
         'sampledata/model20/Sar-Fish.fbx',
@@ -88,30 +112,12 @@ plugins {
         ['sampledata/model4/Dragon.fbx']
 )*/
 
-/*sceneform.asset(
-        'sampledata/model3/Ship3.fbx',
-        'default',
-        'sampledata/model3/Ship3.sfa',
-        'src/main/res/raw/ship3',
-        ['sampledata/model3/Ship3.fbx']
-)*/
 
 
-/*sceneform.asset(
-        'sampledata/model2/Rumba Dancing aus C4D R23.fbx',
-        'default',
-        'sampledata/model2/Rumba Dancing aus C4D R23.sfa',
-        'src/main/res/raw/rumba2',
-        ['sampledata/model2/Rumba Dancing aus C4D R23.fbx']
-)*/
 
-sceneform.asset(
-        'sampledata/model1/type_214.fbx',
-        'sampledata/general/custom_material_para1.mat',
-        'sampledata/model1/type_214.sfa',
-        'src/main/res/raw/submarin_type_214',
-        ['sampledata/model1/type_214.fbx']
-)
+
+
+
 
 android {
     compileSdk 31
