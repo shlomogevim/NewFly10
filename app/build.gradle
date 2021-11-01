@@ -21,48 +21,55 @@ plugins {
         ['sampledata/model2/Rumba Dancing aus C4D R23.fbx']
 )*/
 
-sceneform.asset(                                                 // model -3
+/*sceneform.asset(                                                 // model-3
         'sampledata/model3/Ship3.fbx',
         'default',
         'sampledata/model3/Ship3.sfa',
         'src/main/res/raw/ship3',
         ['sampledata/model3/Ship3.fbx']
-)
-
-
-/*sceneform.asset(
-        'sampledata/model20/Sar-Fish.fbx',
-        'sampledata/model20/custom_material.mat',
-        'sampledata/model20/Sar-Fish.sfa',
-        'src/main/res/raw/fish',
-        ['sampledata/model20/Sar-Fish.fbx']
 )*/
 
-/*sceneform.asset(
-        'sampledata/model11/fly.fbx',
-        'sampledata/model11/custom_material.mat',
-        'sampledata/model11/fly.sfa',
-        'src/main/res/raw/fly',
-        ['sampledata/model11/fly.fbx']
-)*/
-
-/*sceneform.asset(
-        'sampledata/model10/LastVerstionHibiscus5.fbx',
-        'sampledata/model10/custom_material.mat',
-        'sampledata/model10/LastVerstionHibiscus5.sfa',
-        'src/main/res/raw/flower',
-        ['sampledata/model10/LastVerstionHibiscus5.fbx']
-)*/
-
-/*sceneform.asset(
-        'sampledata/model10/LastVerstionHibiscus5.fbx',
+/*sceneform.asset(                                            // model - 4
+        'sampledata/model4/Dragon.fbx',
         'default',
-        'sampledata/model10/LastVerstionHibiscus5.sfa',
-        'src/main/res/raw/flower',
-        ['sampledata/model10/LastVerstionHibiscus5.fbx']
+        'sampledata/model4/Dragon.sfa',
+        'src/main/res/raw/dragon',
+        ['sampledata/model4/Dragon.fbx']
+)*/
+
+/*sceneform.asset(                                              // model-5
+        'sampledata/model5/rp_nathan_animated_003_walking.fbx',
+        'default',
+        'sampledata/model5/rp_nathan_animated_003_walking.sfa',
+        'src/main/res/raw/nathan',
+        ['sampledata/model5/rp_nathan_animated_003_walking.fbx']
 )*/
 
 /*sceneform.asset(
+        'sampledata/model6/luoli_run_triangle.fbx',           // model-6
+        'default',
+        'sampledata/model6/luoli_run_triangle.sfa',
+        'src/main/res/raw/loloi_run',
+        ['sampledata/model6/luoli_run_triangle.fbx']
+)*/
+
+/*sceneform.asset(                                          // model-7
+        'sampledata/model7/fishman.fbx',
+        'default',
+        'sampledata/model7/fishman.sfa',
+        'src/main/res/raw/fishman',
+        ['sampledata/model7/fishman.fbx']
+)*/
+
+/*sceneform.asset(                                      //   model-8
+        'sampledata/model8/SharkHP_2.fbx',
+        'default',
+        'sampledata/model8/SharkHP_2.sfa',
+        'src/main/res/raw/shark',
+        ['sampledata/model8/SharkHP_2.fbx']
+)*/
+
+/*sceneform.asset(                                     // model-9
         'sampledata/model9/caballomader0_ani1.fbx',
         'default',
         'sampledata/model9/caballomader0_ani1.sfa',
@@ -70,13 +77,44 @@ sceneform.asset(                                                 // model -3
         ['sampledata/model9/caballomader0_ani1.fbx']
 )*/
 
-/*sceneform.asset(
-        'sampledata/model8/SharkHP_2.fbx',
-        'default',
-        'sampledata/model8/SharkHP_2.sfa',
-        'src/main/res/raw/shark',
-        ['sampledata/model8/SharkHP_2.fbx']
+/*sceneform.asset(                                     // modei-10
+        'sampledata/model10/LastVerstionHibiscus5.fbx',
+        'sampledata/model10/custom_material.mat',
+        'sampledata/model10/LastVerstionHibiscus5.sfa',
+        'src/main/res/raw/flower',
+        ['sampledata/model10/LastVerstionHibiscus5.fbx']
 )*/
+
+
+/*sceneform.asset(                                 // model-11
+        'sampledata/model20/Sar-Fish.fbx',
+        'sampledata/model20/custom_material.mat',
+        'sampledata/model20/Sar-Fish.sfa',
+        'src/main/res/raw/fish',
+        ['sampledata/model20/Sar-Fish.fbx']
+)*/
+
+/*sceneform.asset(                                //  model-20
+        'sampledata/model11/fly.fbx',
+        'sampledata/model11/custom_material.mat',
+        'sampledata/model11/fly.sfa',
+        'src/main/res/raw/fly',
+        ['sampledata/model11/fly.fbx']
+)*/
+
+
+
+/*sceneform.asset(
+        'sampledata/model10/LastVerstionHibiscus5.fbx',
+        'default',
+        'sampledata/model10/LastVerstionHibiscus5.sfa',
+        'src/main/res/raw/flower',
+        ['sampledata/model10/LastVerstionHibiscus5.fbx']
+)*/
+
+
+
+
 
 /*sceneform.asset(
         'sampledata/model7/fishman.fbx',
@@ -87,30 +125,12 @@ sceneform.asset(                                                 // model -3
 )*/
 
 
-/*sceneform.asset(
-        'sampledata/model6/luoli_run_triangle.fbx',
-        'default',
-        'sampledata/model6/luoli_run_triangle.sfa',
-        'src/main/res/raw/loloi_run',
-        ['sampledata/model6/luoli_run_triangle.fbx']
-)*/
-
-/*sceneform.asset(
-        'sampledata/model5/rp_nathan_animated_003_walking.fbx',
-        'default',
-        'sampledata/model5/rp_nathan_animated_003_walking.sfa',
-        'src/main/res/raw/nathan',
-        ['sampledata/model5/rp_nathan_animated_003_walking.fbx']
-)*/
 
 
-/*sceneform.asset(
-        'sampledata/model4/Dragon.fbx',
-        'default',
-        'sampledata/model4/Dragon.sfa',
-        'src/main/res/raw/dragon',
-        ['sampledata/model4/Dragon.fbx']
-)*/
+
+
+
+
 
 
 

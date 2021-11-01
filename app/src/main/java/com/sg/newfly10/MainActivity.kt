@@ -17,85 +17,93 @@ import com.google.ar.sceneform.ux.ArFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-
-
-
 class MainActivity : AppCompatActivity() {
 
     lateinit var arFragment: ArFragment
     private val nodes = mutableListOf<RotatingNode>()
     private lateinit var videoRecorder: VideoRecorder
-    private var isRecording=false
+    private var isRecording = false
 
-   /* private val model = Models.Submarine                  //model-1
-    private val modelResourceId = R.raw.submarin_type_214
-    val animationString="214_bone|214_boneAction"
-    private var spaScale=false
-    private var thisScale=.1f*/
+    /* private val model = Models.Submarine                  //model-1
+     private val modelResourceId = R.raw.submarin_type_214
+     val animationString="214_bone|214_boneAction"
+     private var spaScale=false
+     private var thisScale=.1f*/
 
     /*private val model = Models.Rumba2                 // model-2
   private val modelResourceId = R.raw.rumba2*/
 
-     private val model = Models.Ship3                    // modek-3
-   private val modelResourceId = R.raw.ship3
-    val animationString="CINEMA_4D_Main"
-    private var spaScale=false
-    private var thisScale=.3f
+    /*    private val model = Models.Ship3                    // modek-3
+      private val modelResourceId = R.raw.ship3
+       val animationString="CINEMA_4D_Main"
+       private var spaScale=false
+       private var thisScale=.5f*/
 
+   /* private val model = Models.Dragon                  // model-4
+    private val modelResourceId = R.raw.dragon
+    val animationString = "Dragon"
+    private var spaScale = false
+    private var thisScale = .5f*/
 
-  /*  private val model = Models.Flower                    // model-10
-    private val modelResourceId = R.raw.flower
-    val animationString="Scene"
-    private var spaScale=false
-    private var thisScale=0.075f
-*/
+   /*  private val model = Models.Nathan                    // model-5
+     private val modelResourceId = R.raw.nathan
+    val animationString = "rp_nathan_animated_003_walking"
+    private var spaScale = false
+    private var thisScale = .2f*/
 
-   /* private val model = Models.Fly                //model-11
-    private val modelResourceId = R.raw.fly
-    val animationString="fly"
-    private var spaScale=false
-    private var thisScale=0.9f*/
+  /*   private val model = Models.LoliRun                   // model-6
+    private val modelResourceId = R.raw.loloi_run
+    val animationString="CINEMA_4D___"
+    private var spaScale = false
+    private var thisScale = .2f*/
 
+  /*  private val model = Models.Fisherman              // model-7
+   private val modelResourceId = R.raw.fishman
+   val animationString="fishman"
+   private var spaScale=false
+    private var thisScale = .2f*/
 
-   /* private val model = Models.Fish               //model-20
-    private val modelResourceId = R.raw.fish
-    val animationString="Armature|ArmatureAction"
-    private var spaScale=false
-    private var thisScale=.6f*/
-
-
-
-   /* private val model = Models.Caballallo                       // working fine
-    private val modelResourceId = R.raw.caballomader
-    val animationString="Armature|ArmatureAction.002"
-    private var spaScale=false
-    private var thisScale=0.03f*/
-
-   /* private val model = Models.Shark                      // working fine
+  /*   private val model = Models.Shark                      // model-8
     private val modelResourceId = R.raw.shark
     val animationString="Armature|ArmatureAction"
     private var spaScale=false
     private var thisScale=0.8f*/
 
-
-    /*private val model = Models.Fisherman              // working fine
-    private val modelResourceId = R.raw.fishman
-    val animationString="fishman"
-    private var spaScale=false
-*/
-
-   /* private val model = Models.LoliRun                   // working fine
-    private val modelResourceId = R.raw.loloi_run
-    val animationString="CINEMA_4D___"*/
+  /* private val model = Models.Caballallo                   // model-9
+   private val modelResourceId = R.raw.caballomader          //wood horse
+   val animationString="Armature|ArmatureAction.002"
+   private var spaScale=false
+   private var thisScale=0.03f*/
 
 
-   /* private val model = Models.Nathan                    // working fine
-    private val modelResourceId = R.raw.nathan*/
+   /*   private val model = Models.Flower                    // model-10
+      private val modelResourceId = R.raw.flower
+      val animationString="Scene"
+      private var spaScale=false
+      private var thisScale=0.075f*/
+
+    /* private val model = Models.Fly                //model-11
+     private val modelResourceId = R.raw.fly
+     val animationString="fly"
+     private var spaScale=false
+     private var thisScale=0.9f*/
+
+
+     private val model = Models.Fish               //model-20
+     private val modelResourceId = R.raw.fish
+     val animationString="Armature|ArmatureAction"
+     private var spaScale=false
+     private var thisScale=1.2f
 
 
 
-    /*private val model = Models.Dragon                  // working fine
-    private val modelResourceId = R.raw.dragon*/
+
+
+
+
+
+
+
 
 
 
@@ -115,26 +123,25 @@ class MainActivity : AppCompatActivity() {
 
         videoRecorder = VideoRecorder(this).apply {
             sceneView = arFragment.arSceneView
-            setVideoQuality(CamcorderProfile.QUALITY_1080P,resources.configuration.orientation)
+            setVideoQuality(CamcorderProfile.QUALITY_1080P, resources.configuration.orientation)
         }
         setupFab()
     }
 
-    private fun setupFab(){
+    private fun setupFab() {
         fab.setOnClickListener {
 
             fab.setOnLongClickListener {
-                isRecording=videoRecorder.toggleRecordingState()
+                isRecording = videoRecorder.toggleRecordingState()
                 true
             }
             fab.setOnTouchListener { view, motionEvent ->
-                if (motionEvent.action== MotionEvent.ACTION_UP && isRecording){
-                    isRecording=videoRecorder.toggleRecordingState()
-                    Toast.makeText(this,"Save video to gallery ... ", Toast.LENGTH_LONG).show()
+                if (motionEvent.action == MotionEvent.ACTION_UP && isRecording) {
+                    isRecording = videoRecorder.toggleRecordingState()
+                    Toast.makeText(this, "Save video to gallery ... ", Toast.LENGTH_LONG).show()
                     true
-                }else false
+                } else false
             }
-
 
 
         }
@@ -149,7 +156,7 @@ class MainActivity : AppCompatActivity() {
 
                 addNodeToScene(anchor, modelRenderable)
 
-              //  modelRenderable.getMaterial().setFloat3("andyColor",0.92f,0.26f,0.21f)
+                //  modelRenderable.getMaterial().setFloat3("andyColor",0.92f,0.26f,0.21f)
 
                 eliminateDot()
             }.exceptionally {
@@ -158,7 +165,6 @@ class MainActivity : AppCompatActivity() {
             }
 
     }
-
 
 
     private fun addNodeToScene(
@@ -175,27 +181,27 @@ class MainActivity : AppCompatActivity() {
 
             setParent(rotatingNode)
             localPosition = Vector3(model.radius, model.height, 0f)
-           localRotation = Quaternion.eulerAngles(Vector3(0f, model.rotationDegrees, 0f))
-           // localRotation = Quaternion.eulerAngles(Vector3(0f, 180f, 0f))
+            localRotation = Quaternion.eulerAngles(Vector3(0f, model.rotationDegrees, 0f))
+            // localRotation = Quaternion.eulerAngles(Vector3(0f, 180f, 0f))
 
-        if (!spaScale){
-            localScale = Vector3(thisScale, thisScale, thisScale)
-        }
+            if (!spaScale) {
+                localScale = Vector3(thisScale, thisScale, thisScale)
+            }
 
         }
         arFragment.arSceneView.scene.addChild(anchorNode)
         nodes.add(rotatingNode)
         //val animationData=modelRenderable?.getAnimationData("Beedrill_Animation")
         // val animationData=modelRenderable?.getAnimationData("mixamo.com")
-       // val animationData = modelRenderable?.getAnimationData("Cinema_4D_Basis")
-      //  val animationData = modelRenderable?.getAnimationData("CINEMA_4D_Main")
-       // val animationData = modelRenderable?.getAnimationData("Dragon")
-     // val animationData = modelRenderable?.getAnimationData("214_bone|214_boneAction")
+        // val animationData = modelRenderable?.getAnimationData("Cinema_4D_Basis")
+        //  val animationData = modelRenderable?.getAnimationData("CINEMA_4D_Main")
+        // val animationData = modelRenderable?.getAnimationData("Dragon")
+        // val animationData = modelRenderable?.getAnimationData("214_bone|214_boneAction")
         //val animationData = modelRenderable?.getAnimationData("rp_nathan_animated_003_walking")
-      //  val animationData = modelRenderable?.getAnimationData("CINEMA_4D___")
+        //  val animationData = modelRenderable?.getAnimationData("CINEMA_4D___")
 
 
-       val animationData = modelRenderable?.getAnimationData(animationString)
+        val animationData = modelRenderable?.getAnimationData(animationString)
         ModelAnimator(animationData, modelRenderable).apply {
             repeatCount = ModelAnimator.INFINITE
             start()

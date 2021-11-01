@@ -33,24 +33,89 @@ sealed class Models {
         override val degreesPerSecond: Float
             get() = 5f
         override val radius: Float
-            get() = 0.2f
+            get() = 1f
         override val height: Float
-            get() = 0.3f
+            get() = -0.8f
         override val rotationDegrees: Float
             get() = 90f
     }
 
-    object Fish: Models() {
+    object Dragon : Models() {                         //model-4
         override val degreesPerSecond: Float
             get() = 10f
         override val radius: Float
-            get() = 3.5f
+            get() = 0.2f
+        override val height: Float
+            get() = -0.1f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object Nathan : Models() {                           // model-5
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = -0.1f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object LoliRun : Models() {                            // model-6
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.1f
         override val height: Float
             get() = 0.1f
         override val rotationDegrees: Float
             get() = 180f
     }
 
+    object Fisherman : Models() {                   //  model-7
+        override val degreesPerSecond: Float
+            get() = 5f
+        override val radius: Float
+            get() = 0.001f
+        override val height: Float
+            get() = 0.01f
+        override val rotationDegrees: Float
+            get() = 90f                         // can not change direction
+    }
+
+    object Shark: Models() {                      // model-8
+        override val degreesPerSecond: Float
+            get() = 10f
+        override val radius: Float
+            get() = 0.08f
+        override val height: Float
+            get() = 0.2f
+        override val rotationDegrees: Float
+            get() = 180f
+    }
+
+    object Caballallo: Models() {
+        override val degreesPerSecond: Float           // model-9
+            get() = 10f
+        override val radius: Float
+            get() = 0.2f
+        override val height: Float
+            get() = 0.2f
+        override val rotationDegrees: Float
+            get() = 90f
+    }
+
+    object Flower: Models() {                    // model-10
+        override val degreesPerSecond: Float
+            get() = 20f
+        override val radius: Float
+            get() = 0.001f
+        override val height: Float
+            get() = 0.02f
+        override val rotationDegrees: Float
+            get() = 90f
+    }
 
     object Fly: Models() {                           //model-11
         override val degreesPerSecond: Float
@@ -63,84 +128,38 @@ sealed class Models {
             get() = 90f
     }
 
-    object Flower: Models() {
-        override val degreesPerSecond: Float
-            get() = 20f
-        override val radius: Float
-            get() = 0.001f
-        override val height: Float
-            get() = 0.02f
-        override val rotationDegrees: Float
-            get() = 90f
-    }
 
-    object Caballallo: Models() {
+    object Fish: Models() {                        //model-20
         override val degreesPerSecond: Float
             get() = 10f
         override val radius: Float
-            get() = 0.2f
-        override val height: Float
-            get() = 0.2f
-        override val rotationDegrees: Float
-            get() = 90f
-    }
-
-    object Shark: Models() {
-        override val degreesPerSecond: Float
-            get() = 10f
-        override val radius: Float
-            get() = 0.08f
-        override val height: Float
-            get() = 0.2f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
-
-    object Fisherman : Models() {
-        override val degreesPerSecond: Float
-            get() = 5f
-        override val radius: Float
-            get() = 0.001f
-        override val height: Float
-            get() = 0.01f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
-
-    object LoliRun : Models() {
-        override val degreesPerSecond: Float
-            get() = 10f
-        override val radius: Float
-            get() = 0.1f
+            get() = 3.5f
         override val height: Float
             get() = 0.1f
         override val rotationDegrees: Float
             get() = 180f
     }
 
-    object Nathan : Models() {
-        override val degreesPerSecond: Float
-            get() = 10f
-        override val radius: Float
-            get() = 0.2f
-        override val height: Float
-            get() = -0.1f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
 
 
 
-   object Dragon : Models() {
-         override val degreesPerSecond: Float
-            get() = 10f
-        override val radius: Float
-            get() = 0.2f
-        override val height: Float
-            get() = -0.1f
-        override val rotationDegrees: Float
-            get() = 180f
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
